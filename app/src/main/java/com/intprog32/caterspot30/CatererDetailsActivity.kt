@@ -3,14 +3,12 @@ package com.intprog32.caterspot30
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.intprog32.caterspot30.Data.CatererData
-import com.intprog32.caterspot30.Intefaces.RetrofitInstance
 
 class CatererDetailsActivity : Activity() {
     @SuppressLint("MissingInflatedId")
