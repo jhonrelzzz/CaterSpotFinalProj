@@ -50,7 +50,7 @@ class CatererDetailsActivity : Activity() {
         }
     }
 
-    private fun fetchAndDisplayCaterer() {
+/*    private fun fetchAndDisplayCaterer() {
         RetrofitInstance.api.getCaterers().enqueue(object : retrofit2.Callback<List<CatererData>> {
             override fun onResponse(
                 call: retrofit2.Call<List<CatererData>>,
@@ -73,7 +73,7 @@ class CatererDetailsActivity : Activity() {
                 Toast.makeText(this@CatererDetailsActivity, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
             }
         })
-    }
+    }*/
 
     private fun displayCaterer(caterer: CatererData) {
         findViewById<TextView>(R.id.detail_name).text = caterer.name
