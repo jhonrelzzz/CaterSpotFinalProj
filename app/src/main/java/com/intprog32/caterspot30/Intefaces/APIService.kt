@@ -14,11 +14,7 @@ import retrofit2.http.Query
 import retrofit2.http.PUT
 
 interface ApiService {
-
-    // POST route to register a new user
-
     @POST("/users")
-
     fun registerUser(@Body userData: UserData): Call<UserData>
 
     @GET("/users/validate")
@@ -27,7 +23,6 @@ interface ApiService {
         @Query("password") password: String
     ): Call<ResponseBody>
 
-    // Change this line:
     @GET("/users")
     fun getUserByEmail(@Query("email") email: String): Call<UserData>
 
@@ -52,9 +47,6 @@ interface ApiService {
 
     @GET("/caterers")
     fun getCaterers(): Call<List<CatererData>>
-
-    @GET("/bookings")
-    fun getBookings(): Call<List<BookingData>>
 
     @POST("/bookings")
     fun addBooking(@Body booking: BookingData): Call<Void>

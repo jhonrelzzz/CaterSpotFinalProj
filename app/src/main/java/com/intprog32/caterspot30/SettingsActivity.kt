@@ -94,7 +94,7 @@ class SettingsActivity : Activity() {
                     startActivity(Intent(this, LoginActivity::class.java))
                     finish()
                 }
-                .setNegativeButton("Delete") { dialog, id ->
+                .setNegativeButton("Cancel") { dialog, id ->
                     // If the user cancels, just dismiss the dialog
                     dialog.dismiss()
                 }
