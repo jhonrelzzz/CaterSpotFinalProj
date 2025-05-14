@@ -10,7 +10,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.Switch
 import android.widget.Toast
-import com.intprog32.caterspot30.Data.UserData
 import com.intprog32.caterspot30.Intefaces.RetrofitInstance
 import okhttp3.ResponseBody
 import retrofit2.Call
